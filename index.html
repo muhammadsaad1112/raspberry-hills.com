@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Top Header -->
+    <div class="top-header">
+        <div class="top-header-content">
+            <div class="header-left">
+                <span>ENGLISH</span>
+                <span>COUNTRY</span>
+                <span >FREE SHIPPING FOR ALL ORDERS</span>
+            </div>
+            <div class="header-right">
+                <div class="header-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+
+                <span>NEWSLETTER</span>
+                <span>CONTACT US</span>
+                <span>FAQS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="main-header-content">
+            <a href="#" class="logo"><img width="140" height="75px"
+                    src="https://raspberryhill.com.co/wp-content/uploads/2025/07/images.png"></a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for products">
+                <select class="category-select">
+                    <option>SELECT CATEGORY</option>
+                    <option>Hoodies</option>
+                    <option>Shirts</option>
+                    <option>Jackets</option>
+                    <option>Sweatpants</option>
+                </select>
+                <button class="search-btn"><i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <span id="log-btn"  onclick="openLoginSidebar()">LOGIN / REGISTER</span>
+             
+
+
+
+  <div class="overlay" id="overlay" onclick="closeLoginSidebar()"></div>
+
+    <!-- Login Sidebar -->
+    <div class="login-sidebar" id="loginSidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Sign in</h2>
+            <button class="close-btn" onclick="closeLoginSidebar()">✕</button>
+        </div>
+        
+        <form class="login-form">
+            <div class="form-group">
+                <label class="form-label">Username or email address <span class="required">*</span></label>
+                <input type="text" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Password <span class="required">*</span></label>
+                <div class="password-container">
+                    <input type="password" class="form-input" id="password" required>
+                    <button type="button" class="password-toggle" onclick="togglePassword()">👁</button>
+                </div>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            
+            <button type="submit" class="login-submit">Log in</button>
+            
+            <a href="#" class="forgot-password">Lost your password?</a>
+        </form>
+        
+        <div class="create-account">
+            <div class="create-account-text">No account yet?</div>
+            <a href="#" class="create-account-btn">Create an Account</a>
+        </div>
+    </div>
+
+
+
+
+
+                <!-- Icons -->
+                <div style="display: flex; gap: 20px; align-items: center;">
+
+                    <!-- Wishlist Icon -->
+                    <i class="fa-regular fa-heart"
+                        style="font-size: 18px; color: black; background: white; padding: 10px;"></i>
+
+                    <!-- Shopping Bag Icon with Badge -->
+                    <div style="position: relative; display: inline-block;">
+                        <i class="fa-solid fa-bag-shopping"
+                            style="font-size: 18px; color: black; background: white; padding: 10px;"></i>
+                        <span
+                            style="position: absolute; top: -2px; right: -2px; background: black; color: white; border-radius: 50%; font-size: 10px; padding: 0px 4px;">0</span>
+                    </div>
+
+                </div>
+
+                <span>£0.00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <ul class="nav-menu">
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="hoodies.html">HOODIE</a></li>
+                <li><a href="shirt.html">SHIRT</a></li>
+                <li><a href="shirt.html">SHORTS</a></li>
+                <li><a href="sweatspants.html">SWEATPANTS</a></li>
+                <li><a href="jacket.html">JACKET</a></li>
+                <li><a href="tracksuit.html">TRACKSUIT</a></li>
+                <li><a href="gallery.html">GV GALLERY</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+            <div class="hero-image">
+                <img src="image.jpg" alt="">
+            </div>
+    </section>
+
+    <!-- Latest Collection -->
+    <section id="shop" class="container">
+        <h2 class="section-title">Latest Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image hoodie-1">
+                    <img src="https://images.unsplash.com/photo-1558898452-e5c989f41b27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <div class="discount-badge">-41%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">3 Zip Splice Hoodie</h3>
+                    <div class="product-price">
+                        <span class="current-price">£176.00</span>
+                        <span class="original-price">£300.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-2">
+                    <img src="https://images.unsplash.com/photo-1700527223375-da8f4a622193?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNob3Bpbmd8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="discount-badge">-40%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Berry Fur Leather</h3>
+                    <div class="product-price">
+                        <span class="current-price">£199.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-3">
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJsYWNrJTIwR1YlMjBHYWxsZXJ5JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Black GV Gallery</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-4">
+                    <img src="https://images.unsplash.com/photo-1666358069501-a12536762bf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fENhbW8lMjBHdiUyMEdhbGxlcnklMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Camo Gv Gallery</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-5">
+                    <img src="https://images.unsplash.com/photo-1737139282698-b78009a06133?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2FzYW1pZ28lMjBIb29kaWUlMjBHVnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <div class="discount-badge">-45%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Casamigo Hoodie GV</h3>
+                    <div class="product-price">
+                        <span class="current-price">£189.00</span>
+                        <span class="original-price">£344.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-6">
+                    <img src="https://images.unsplash.com/photo-1549048085-69f77c42fe9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R2FsbGVyeSUyMFJhc3BiZXJyeSUyMHNoaXJ0fGVufDB8fDB8fHww" alt="">
+                    <div class="discount-badge">-25%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gallery Raspberry Hills</h3>
+                    <div class="product-price">
+                        <span class="current-price">£249.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raspberry Hills Hoodie Section -->
+    <section id="hoodies" class="container">
+        <h2 class="section-title">Raspberry Hills Hoodie</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image hoodie-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNwmyAlUbUC4OmgASG-ligCyF7GkqJOv5ulw&s" alt="">
+                    <div class="discount-badge">-41%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">3 Zip Splice Hoodie</h3>
+                    <div class="product-price">
+                        <span class="current-price">£176.00</span>
+                        <span class="original-price">£300.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHjGlQc1Qg2MzXudBsQiOk9dTjyjA0dhqzg&s" alt="">
+                    <div class="discount-badge">-25%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gallery Raspberry Hills</h3>
+                    <div class="product-price">
+                        <span class="current-price">£249.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMNbxVX90SYGsFXCZN3OZxlCBzFuDTaqLAMQ&s" alt="">
+                    <div class="discount-badge">-25%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gold+Vintage Gallery</h3>
+                    <div class="product-price">
+                        <span class="current-price">£249.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSreW975RqbWW7YHkWUSYfsiPkJCIl6uYkZ5Q&s" alt="">
+                    <div class="discount-badge">-0%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GOLD+VINTAGE Gv</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeeO8OnRraf1d96qcuZPK_HVwjgtg0vF6NNA&s" alt="">
+                    <div class="discount-badge">-0%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gv Gallery BERMUDA</h3>
+                    <div class="product-price">
+                        <span class="current-price">£199.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image hoodie-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqcx6OwzLAagypO4CS3MzvIfuBRLRRrJO1A&s" alt="">
+                    <div class="discount-badge">-40%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GV GALLERY GALAXY</h3>
+                    <div class="product-price">
+                        <span class="current-price">£199.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raspberry Hills Shorts Section -->
+    <section id="shorts" class="container">
+        <h2 class="section-title">Raspberry Hills Shorts</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image shorts-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSm4lnb9A6C5MUReKfykFsxushCK9bIojng&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GV GALLERY BLACK</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image shorts-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkKoDz6kbVO_oLIvAG3V-Q3ILhmF9lLpYBJw&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GV GALLERY BONSAI</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image shorts-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5qr3E7LoHWI9B0sNUNDrmkh3_wpf_UQLog&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gv Gallery CAMO RH</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image shorts-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9aecjfI4975c0nZTJOzvaXte8nl5kqMVpQ&s" alt="">
+                    <div class="discount-badge">-27%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gv Gallery Camo</h3>
+                    <div class="product-price">
+                        <span class="current-price">£244.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9aecjfI4975c0nZTJOzvaXte8nl5kqMVpQ&s" alt="">
+                    <div class="discount-badge">-31%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gv Gallery Digi Camo</h3>
+                    <div class="product-price">
+                        <span class="current-price">£199.00</span>
+                        <span class="original-price">£290.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8X77h_5fq37qdglX1LXzoTvx8uwf1-gxaHw&s" alt="">
+                    <div class="discount-badge">-12%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gv Gallery JORTS</h3>
+                    <div class="product-price">
+                        <span class="current-price">£199.00</span>
+                        <span class="original-price">£225.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raspberry Hills Sweatpants Section -->
+    <section id="sweatpants" class="container">
+        <h2 class="section-title">Raspberry Hills Sweatpants</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image sweat-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFLw5g-zWBBphPtuk4gyi4xmlUo2weohZ1w&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Black GV Gallery</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image sweat-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQteYcHgO1LPa0fKF68YTddLnw5IKtSRUTc7A&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Camo Gv Gallery</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image sweat-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSleNH-u05dLIVObluAC1RFcDH5rXkvQTqA&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Camo Gv Gallery</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEO2oHNguUt8JsfcWeQ4lsK5Z8v-lsqg9k3A&s" alt="">
+                    <div class="discount-badge">-15%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GV GALLERY AGUA</h3>
+                    <div class="product-price">
+                        <span class="current-price">£170.00</span>
+                        <span class="original-price">£200.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OxodIAMZBlfiIiel08KIgXtNMBHuf1gmeA&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GV Gallery ARMY</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzaLKYIeRMpcaZrabF9oaFMC-wvaHmRGaUg&s" alt="">
+                    <div class="discount-badge">-33%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">GV Gallery CASHEW</h3>
+                    <div class="product-price">
+                        <span class="current-price">£222.00</span>
+                        <span class="original-price">£333.00</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn">♡</button>
+                    <button class="action-btn">🛒</button>
+                    <button class="action-btn">👁</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <div class="main-container">
+        <div class="fade-in">
+            <h1>Raspberry Hills</h1>
+            
+            <p><span class="brand-name">Raspberry Hills Clothing</span> is more than just a fashion label—it's a lifestyle movement that captures the spirit of individuality, comfort, and effortless streetwear flair. Designed for those who want to stand out while staying grounded, <span class="brand-name">Raspberry Hills</span> blends modern aesthetics with a subtle nod to retro influences. The brand is known for its clean cuts, bold minimalistic designs, and high-quality fabric that feels as good as it looks.</p>
+            
+            <p>One of the standout features of <span class="brand-name">Raspberry Hills clothing</span> is its versatility. From oversized hoodies to sleek cargo pants, each piece is designed to be worn casually or styled up for a bolder streetwear vibe. Whether you're layering it for winter or rocking a simple tee in the summer, Raspberry Hills provides pieces that fit seamlessly into your wardrobe. The brand often drops limited-edition collections that sell out quickly, a testament to its growing cult following.</p>
+
+            <p>Raspberry Hills thrives on self-expression. Each garment tells a story—sometimes loud, sometimes quiet—but always unique. Their color palettes range from earthy tones to eye-catching brights, catering to every mood and season. You'll often find small, thoughtful design details that elevate even the simplest silhouettes.</p>
+
+            <p>Rooted in authenticity, Raspberry Hills isn't trying to follow trends—it's setting them. It caters to a new generation of fashion enthusiasts who value creativity, quality, and personal style. With its ever-evolving collections, the brand continues to redefine what modern streetwear means. <span class="brand-name">Raspberry Hill Shop</span> is not just something you wear—it's something you feel. Bold, timeless, and unapologetically original, this is one brand that's making waves in today's fashion scene, one piece at a time.</p>
+
+            <h2>Raspberry Hills Clothing: Bold Streetwear That Speaks Volumes</h2>
+
+            <p>Raspberry Hills is a fresh wave in the world of streetwear—loud, expressive, and deeply rooted in urban culture. The brand doesn't follow the rules of fast fashion; instead, it focuses on quality pieces that represent individuality and raw style. Whether it's a hoodie, sweatpants, or camo shorts, Raspberry Hills offers something unique for those who aren't afraid to stand out. Every piece in their lineup blends form and function with street-ready energy, making it perfect for both everyday wear and bold fashion statements.</p>
+
+            <h2>Raspberry Hills Hoodie</h2>
+            
+            <p>The <span class="brand-name">Raspberry Hills Hoodie</span> is where comfort meets statement. Built with heavyweight cotton and a soft fleece lining, it offers a relaxed fit that's ideal for layering or wearing solo. What really sets it apart is the detail—custom graphics, subtle embroidery, and a fit that drapes perfectly. It's the kind of hoodie that doesn't just keep you warm—it speaks volumes about your style. Pair it with jeans or joggers, and you're instantly ready to turn heads.</p>
+
+            <div class="product-item">3 Zip Splice Hoodie</div>
+            <div class="product-item">GOLD+VINTAGE Gv Gallery Bonsai Zip</div>
+            <div class="product-item">GV Gallery New York</div>
+            <div class="product-item">GV Gallery Jersey</div>
+
+            <h2>Raspberry Hills Sweatpants</h2>
+            
+            <p>Nothing says laid-back luxury like the <span class="brand-name">Raspberry Hills Sweatpants</span>. These aren't your average joggers. Designed for both comfort and street appeal, they come with a tapered fit, adjustable drawstrings, and bold branding. Whether you're hitting the streets or just lounging around, these sweatpants give you that effortless vibe. The stitching and build quality make them long-lasting, while the soft interior keeps things cozy all day long.</p>
+
+            <div class="product-item">Camo Gv Gallery Cargo</div>
+            <div class="product-item">GV GALLERY AGUA SWEATS</div>
+            <div class="product-item">GV Gallery Army Cargos 'Camo'</div>
+            <div class="product-item">Gv Gallery CITY CAMO PANTS</div>
+
+            <h2>Raspberry Hills Shirt</h2>
+            
+            <p>The <span class="brand-name">Raspberry Hills Shirt</span> adds a sharp touch to the collection. Often dropping in oversized cuts and bold prints, these shirts are meant to be noticed. Whether it's a crisp white tee with the Raspberry Hills logo or a button-up with detailed patterns, the shirts are versatile enough to dress up or keep casual. Perfectly paired with their camo pants or shorts, these shirts make sure your fit is always on point.</p>
+
+            <div class="product-item">Gv Gallery GLENCI WOMENS TEE</div>
+            <div class="product-item">GV Gallery Grateful Berry Tee 'Green'</div>
+            <div class="product-item">Gv Gallery Mystikal Jersey – Black</div>
+            <div class="product-item">GV Gallery Raspberry Hills Fútbol Jersey</div>
+
+            <h2>Raspberry Hills Camo Shirt</h2>
+            
+            <p>Want to step it up? The <span class="brand-name">Raspberry Hills Camo Shirt</span> is where classic meets cool. With a military-inspired look and street-ready finish, this shirt is designed for bold energy. Made with durable yet breathable fabric, it's great for layering or rocking on its own. The camo design is modern, not overdone—striking the right balance between edgy and wearable.</p>
+
+            <div class="product-item">GV Gallery Realtree Thermal</div>
+            <div class="product-item">Raspberry Hills 'Pelican V2' Thermal Longsleeve</div>
+            <div class="product-item">Raspberry Hills Shirt – White</div>
+            <div class="product-item">Raspberry Hills Broadcast Tee</div>
+
+            <h2>Raspberry Hills Camo Shorts</h2>
+            
+            <p>If you're aiming for standout streetwear, the <span class="brand-name">Raspberry Hills Camo Shorts</span> are a must-have. They combine utility and comfort with multiple pockets, a great fit, and rugged design. The camo pattern isn't your average military print—it's stylized, modern, and perfect for urban wear. These shorts are built for movement, offering flexibility and durability wherever the day takes you.</p>
+
+            <div class="product-item">Gv Gallery CAMO RH SHORTS</div>
+            <div class="product-item">Gv Gallery Digi Camo Shorts</div>
+            <div class="product-item">GV GALLERY BONSAI SHORTS</div>
+            <div class="product-item">Raspberry hills Leather Carpenter Shorts</div>
+
+            <h2>Raspberry Hills Camo Sweatpants</h2>
+            
+            <p>For cooler days, the <span class="brand-name">Raspberry Hills Camo Sweatpants</span> offer the same bold energy in a warmer package. Featuring the signature Raspberry Hills camo print, these pants deliver high performance with a streetwear twist. Ribbed cuffs, thick drawstrings, and bold color contrasts give them an elevated look. They're ideal for matching with the camo hoodie or a neutral top to let the pants shine.</p>
+
+            <h2>Raspberry Hills Camo Pants</h2>
+            
+            <p>The <span class="brand-name">Raspberry Hills Camo Pants</span> are perfect for anyone who loves mixing utility and fashion. These aren't bulky cargos—they're sleek, tapered, and full of street personality. With reinforced stitching and high-quality fabric, they hold up during daily wear while keeping you stylish. The camo print reflects the rebellious vibe Raspberry Hills is known for, yet it keeps it modern and clean.</p>
+
+            <h2>Raspberry Hills Jacket</h2>
+            
+            <p>Topping it all off is the <span class="brand-name">Raspberry Hills Jacket</span>—a true masterpiece in streetwear layering. Whether it's a bomber, windbreaker, or puffer, each jacket is built with attention to detail. Expect bold logos, hidden pockets, premium zippers, and a fit that works for all body types. It's the kind of outerwear that completes your look, whether you're going minimal or full statement.</p>
+        </div>
+    </div>
+
+
+
+
+
+                <div class="size-filter">
+            <button class="size-btn">XXL</button>
+            <button class="size-btn">XS</button>
+            <button class="size-btn">XL</button>
+            <button class="size-btn">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+        </div>
+
+     <footer class="footer">
+        <div class="footer-content">
+            <!-- Features Section -->
+            <div class="footer-features">
+                <div class="feature-item">
+                    <div class="feature-icon"><img width="55" height="55" src="https://raspberryhill.com.co/wp-content/uploads/2025/07/6831000-55x55.png"></div>
+                    <div class="feature-text">
+                        <h4>Free Shipping.</h4>
+                        <p>On all orders</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><img width="50" height="50" src="https://raspberryhill.com.co/wp-content/uploads/2025/07/2020773-50x50.png"></div>
+                    <div class="feature-text">
+                        <h4>24/7 Support.</h4>
+                        <p>Customer service</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><img width="50" height="50" src="https://raspberryhill.com.co/wp-content/uploads/2025/07/images-1-50x50.png"></div>
+                    <div class="feature-text">
+                        <h4>Online Payment.</h4>
+                        <p>Secure checkout</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><img width="55" height="55" src="https://raspberryhill.com.co/wp-content/uploads/2025/07/2203145-55x55.png"></div>
+                    <div class="feature-text">
+                        <h4>Fast Delivery.</h4>
+                        <p>Quick shipping</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>OUR STORES</h3>
+                    <ul>
+                        <li><a href="#">Hoodie</a></li>
+                        <li><a href="#">Shirt</a></li>
+                        <li><a href="#">Jacket</a></li>
+                        <li><a href="#">Tracksuit</a></li>
+                        <li><a href="#">Shorts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Shop Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>AVAILABLE ON:</h3>
+                    <div class="contact-info">Contact@raspberryhill.com.co</div>
+                    <div class="newsletter">
+                        <h4>Join our newsletter!</h4>
+                        <p>Will be used in accordance with our <a href="#">Privacy Policy</a></p>
+                        <div class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address">
+                            <button class="newsletter-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="payment-section">
+                    <h4>Payment System:</h4>
+                    <div class="payment-methods">
+                        <div class="payment-icon">VISA</div>
+                        <div class="payment-icon">MC</div>
+                        <div class="payment-icon">PP</div>
+                        <div class="payment-icon">AMEX</div>
+                        <div class="payment-icon">VISA</div>
+                        <div class="payment-icon">MC</div>
+                    </div>
+                </div>
+                <div class="shipping-section">
+                    <h4>Shipping System:</h4>
+                    <div class="shipping-methods">
+                        <div class="shipping-icon">DHL</div>
+                        <div class="shipping-icon">UPS</div>
+                        <div class="shipping-icon">FDX</div>
+                        <div class="shipping-icon">TNT</div>
+                        <div class="shipping-icon">DPD</div>
+                        <div class="shipping-icon">GLS</div>
+                    </div>
+                </div>
+              
+                                <div class="footer-section">
+                    <h3>Our Social Links:</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="#" class="social-link">@</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">t</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2025 Raspberry Hills. All Right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<button class="scroll-top" id="scrollTop">↑</button>
+<script>
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+      function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
